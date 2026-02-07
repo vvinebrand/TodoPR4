@@ -1,0 +1,14 @@
+root = true
+
+[*.cs]
+# По умолчанию — подсказки (не ломают сборку)
+dotnet_analyzer_diagnostic.severity = suggestion
+
+# Отключим самые "шумные" правила StyleCop для базового режима
+dotnet_diagnostic.SA1300.severity = none
+dotnet_diagnostic.SA1600.severity = none
+dotnet_diagnostic.SA1402.severity = none
+
+# Форматирование
+indent_style = space
+indent_size = 4
