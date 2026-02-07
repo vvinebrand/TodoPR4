@@ -1,7 +1,5 @@
 # Todo.Core — библиотека Todo + CI/анализаторы
 
-Репозиторий сделан под практическое занятие **«Автоматизация сборки и статический анализ кода»**: решение с библиотекой, примером использования, тестами, анализаторами и CI в GitHub Actions. fileciteturn0file0
-
 ## Структура
 
 ```
@@ -40,8 +38,6 @@ dotnet run --project .\src\Todo.SampleApp\Todo.SampleApp.csproj -c Release
 
 ## Локальный запуск анализа (base/strict)
 
-> В методичке предлагается переключать набор правил копированием нужного файла в `.editorconfig`. fileciteturn0file0
-
 **Base (мягкий режим):**
 ```powershell
 Copy-Item .\.editorconfig.base .\.editorconfig -Force
@@ -55,8 +51,6 @@ dotnet build -c Release
 ```
 
 ## Установка как NuGet-пакета (через GitHub Packages) — Windows
-
-Ниже — инструкция для случая, когда ты **опубликовал(а)** пакет `Todo.Core` в **GitHub Packages** (NuGet feed).
 
 ### 1) Создай Personal Access Token (PAT)
 
