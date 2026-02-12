@@ -21,7 +21,6 @@
 
   <ItemGroup>
     <None Include="..\..\README.md" Pack="true" PackagePath="\" />
-    <None Include=".github\workflows\ci-analysis.yaml" />
   </ItemGroup>
 
   <ItemGroup>
