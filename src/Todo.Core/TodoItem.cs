@@ -32,10 +32,7 @@ public sealed class TodoItem
     /// <exception cref="ArgumentException">Thrown when <paramref name="title"/> is empty/whitespace.</exception>
     public TodoItem(string title)
     {
-        if (title is null)
-        {
-            throw new ArgumentNullException(nameof(title));
-        }
+        ArgumentNullException.ThrowIfNull(title);
 
         var trimmed = title.Trim();
 
